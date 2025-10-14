@@ -13,7 +13,12 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 3. Forget to put a semi-colon.
 
 ### W3
-Table 19:  The player’s current sanity level is not effecting the the method SetLightDimness, as the player's current sanity level goes up, the SetLightDimness will goes not get brighter base on the sanity level. The SetLightDimnesswill just need to change by itself, or inside the method.
+Table 19: The player’s current sanity level is not effecting the the method SetLightDimness, as the player's current sanity level goes up, the SetLightDimness will goes not get brighter base on the sanity level. The SetLightDimnesswill just need to change by itself, or inside the method.
+
+Mono Behaviour coding activity
+1. A class is like a blueprint of a car. Components are the car parts such as engine, wheels. Variables are trails like color or speed. Methods are actions like drive or honk and parking.
+
+2. They will get too bright becasue each bounce will add more and more light without resetting, making the emission stronger every single time.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
