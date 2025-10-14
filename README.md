@@ -2,6 +2,7 @@
 ## Devlogs
 ### W1
 Write your W1 activity Devlog here.
+"Hello World"
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
@@ -10,6 +11,9 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 2. The bounces is countable, you can able to count how many bounce there are. Float is more like a decimal that you cannot really count there is 1.1 bounce.
 
 3. Forget to put a semi-colon.
+
+### W3
+Table 19:  The player’s current sanity level is not effecting the the method SetLightDimness, as the player's current sanity level goes up, the SetLightDimness will goes not get brighter base on the sanity level. The SetLightDimnesswill just need to change by itself, or inside the method.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
