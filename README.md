@@ -15,10 +15,18 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 ### W3
 Table 19: The player’s current sanity level is not effecting the the method SetLightDimness, as the player's current sanity level goes up, the SetLightDimness will goes not get brighter base on the sanity level. The SetLightDimnesswill just need to change by itself, or inside the method.
 
+
+
 Mono Behaviour coding activity
 1. A class is like a blueprint of a car. Components are the car parts such as engine, wheels. Variables are trails like color or speed. Methods are actions like drive or honk and parking.
 
 2. They will get too bright becasue each bounce will add more and more light without resetting, making the emission stronger every single time.
+
+### W4
+Table 19: line 17 is decaring a new member variable, and the type is boolean. A basic C# data type which stores a true or false value. Line 28 is a if statement with it condition, it is saying that if the player press the space and the object is on the ground the code will work. it tests if the object is touching the ground. Which determines whether jumping is allowed. Line 32 is talking about when the object left the ground, it won't able to jump again, unitl grounded, which saying if any of the codition is not met, the code won't work.
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
