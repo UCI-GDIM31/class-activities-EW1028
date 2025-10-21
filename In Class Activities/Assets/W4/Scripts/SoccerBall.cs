@@ -21,14 +21,18 @@ public class SoccerBall : MonoBehaviour
     //
     // Also, uncomment and FIX the Debug.Log line.
 
-    //private ?? ??
-    //{
+    private void OnTriggerEnter(Collider other)
+    {
         // finish STEP 1 by uncommenting and fixing the below line!
-        //Debug.Log(SoccerBall detected a collision with a trigger collider!);
+        Debug.Log("SoccerBall detected a collision with a trigger collider!");
 
         // STEP 2 -------------------------------------------------------------
         // Write an IF STATEMENT to check if the game object we collided with
         //      has the tag "Goal".
+        if (other.gameObject.tag.Equals("Goal"))
+        {
+            MadeGoal();
+        }
         // Refer to the slides for an example of how to check this :)
         //
         // Then, move your Debug.Log() statement so that it's only called if
@@ -36,7 +40,7 @@ public class SoccerBall : MonoBehaviour
 
 
         // STEP 2 -------------------------------------------------------------
-    //}
+    }
 
     // STEP 1 -----------------------------------------------------------------
 
@@ -45,6 +49,7 @@ public class SoccerBall : MonoBehaviour
     // Next, we're going to make a method named MadeGoal to call if the
     //      SoccerBall collided with an object tagged "Goal".
     // MadeGoal RETURNS NOTHING, and has NO INPUT.
+   
     // 
     // Once you've created MadeGoal,
     //      move your Debug.Log() statement into MadeGoal, and
@@ -56,6 +61,7 @@ public class SoccerBall : MonoBehaviour
         // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
         //
         // Call Play on _goalVFX.
+        
 
         // STEP 4 -------------------------------------------------------------
     
@@ -76,7 +82,15 @@ public class SoccerBall : MonoBehaviour
     // You will need to:
     //      1. Create a new member variable to keep track of the points.
     //      2. Use your MadeGoal method to update the points and text.
-    //
+    private int _points = 0;
+    private void MadeGoal()
+    {
+        Debug.Log("Goal scored!");
+        _points += 1;
+        _pointsText.text = "Points: " + _points.ToString();
+        _goalVFX.Play();
+    }
+
     // STEP 5 -----------------------------------------------------------------
     
 
@@ -94,5 +108,13 @@ public class SoccerBall : MonoBehaviour
     //              and update _timeText with the new time.
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
+    private float _timeSinceLastGoal = 0.0f;
+    void Update()
+    {
+        _timeSinceLastGoal += Time.deltaTime;
+        _timeText.text = "Time: " + _timeSinceLastGoal.ToString("F2") + "s";
+        _timeSinceLastGoal = 0.0f;
+    }
+
     // STEP 6 -----------------------------------------------------------------
 }
