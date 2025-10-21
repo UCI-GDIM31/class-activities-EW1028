@@ -87,8 +87,9 @@ public class SoccerBall : MonoBehaviour
     {
         Debug.Log("Goal scored!");
         _points += 1;
-        _pointsText.text = "Points: " + _points.ToString();
+        _pointsText.text = "Points: " + _points;
         _goalVFX.Play();
+        _timeSinceLastGoal = 0.0f;
     }
 
     // STEP 5 -----------------------------------------------------------------
@@ -112,8 +113,8 @@ public class SoccerBall : MonoBehaviour
     void Update()
     {
         _timeSinceLastGoal += Time.deltaTime;
-        _timeText.text = "Time: " + _timeSinceLastGoal.ToString("F2") + "s";
-        _timeSinceLastGoal = 0.0f;
+        _timeText.text = "Time: " + _timeSinceLastGoal;
+        
     }
 
     // STEP 6 -----------------------------------------------------------------

@@ -25,6 +25,10 @@ Mono Behaviour coding activity
 ### W4
 Table 19: line 17 is decaring a new member variable, and the type is boolean. A basic C# data type which stores a true or false value. Line 28 is a if statement with it condition, it is saying that if the player press the space and the object is on the ground the code will work. it tests if the object is touching the ground. Which determines whether jumping is allowed. Line 32 is talking about when the object left the ground, it won't able to jump again, unitl grounded, which saying if any of the codition is not met, the code won't work.
 
+Table 19:
+1. I got into a trouble that my cat is walking in the sky. So I change my Edit Collider of the cat, making around the cat, not too much, not small, which letting the cat touches the ground. This is because Edit Collider decide how big the area is to collide others object. My cat and the ball have the Rigidbodies, and only the goal I check if the Is Trigger is on.
+
+2. My game did not work at the first time that I tested it. I made two MadeGoal method, and I forgot when was I call. So, I deleted one MadeGoal method, and checked my code again.
 
 
 ## Open-Source Assets
