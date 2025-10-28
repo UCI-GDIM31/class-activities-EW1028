@@ -30,6 +30,12 @@ Table 19:
 
 2. My game did not work at the first time that I tested it. I made two MadeGoal method, and I forgot when was I call. So, I deleted one MadeGoal method, and checked my code again.
 
+### W5
+Activity 1: 
+What does transform.Translate() do in the unity?
+
+transform.Translate() moves a GameObject in a certain direction by changing its position. It uses vectors to decide how far and which dierction to move. For example, transform.Translate (Vector3.up * Time.detlaTime) moves the object upward over time. 
+
 
 ## Open-Source Assets
 ### W1
