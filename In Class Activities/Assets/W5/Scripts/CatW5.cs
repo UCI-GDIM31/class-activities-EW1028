@@ -24,6 +24,13 @@ public class CatW5 : MonoBehaviour
         // to change the value of the translation variable,
         // and then call Translate on this GameObject's transform to make it move
         // using translation, _moveSpeed, and Time.deltaTime.
+        float moveInput = Input.GetAxis("Vertical");
+        if (_flipWSControls)
+        {
+            moveInput *= -1;
+        }
+        Vector3 translation = moveInput * Vector3.forward * _moveSpeed * Time.deltaTime;
+        transform.Translate(translation);
         //
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
@@ -43,7 +50,17 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+        Vector3 translate = Vector3.zero;
+        if (Input.GetKey(KeyCode.W))
+        {
+            translate += Vector3.forward;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            translate += Vector3.back;
+        }
+    
+    
         
 
 
