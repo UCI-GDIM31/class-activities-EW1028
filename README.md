@@ -36,6 +36,9 @@ What does transform.Translate() do in the unity?
 
 transform.Translate() moves a GameObject in a certain direction by changing its position. It uses vectors to decide how far and which dierction to move. For example, transform.Translate (Vector3.up * Time.detlaTime) moves the object upward over time. 
 
+Activity 2:
+For the DeerW5 plan, we will make a script that lets the deer walk toward a target using a NavMeshAgent. we'll have two variables, a public Transform called target to set a private NavMeshAgent called agent. In start(), we'll get NavMeshAgent component, and in Update(), we'll use agent.SetDestination(target.position) so the deer keeps walking toward the target.
+
 
 ## Open-Source Assets
 ### W1
