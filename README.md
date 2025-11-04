@@ -39,6 +39,15 @@ transform.Translate() moves a GameObject in a certain direction by changing its 
 Activity 2:
 For the DeerW5 plan, we will make a script that lets the deer walk toward a target using a NavMeshAgent. we'll have two variables, a public Transform called target to set a private NavMeshAgent called agent. In start(), we'll get NavMeshAgent component, and in Update(), we'll use agent.SetDestination(target.position) so the deer keeps walking toward the target.
 
+### W6
+[https://docs.google.com/document/d/13WL1faOUeHHIt5U-4Nu450rY6-oTy8zhNi828PVl7UI/edit?tab=t.0#heading=h.vnix3mev2r4b](URL).
+Table 19 I did the Other tools
+
+1. It needs speed, cat, anf ischasing. Speed controls movement, cat is the target, and isChasing checks if the bat is cahsing.
+
+2. It needs Start(), Update(), StartChasing, anf StopChasing(). Start() and Update() are from Unity, the others I wrote myself.
+
+3. Update() moves the bats toward the cat when chasing. StartChasing() turns chasing on, StopChasing() turn it off, and Start() starts teh cahse at the beginning for testing.
 
 ## Open-Source Assets
 ### W1
