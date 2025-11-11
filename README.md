@@ -49,6 +49,11 @@ Table 19 I did the Other tools
 
 3. Update() moves the bats toward the cat when chasing. StartChasing() turns chasing on, StopChasing() turn it off, and Start() starts teh cahse at the beginning for testing.
 
+### W7
+[https://docs.google.com/document/d/1Big5iCIqdYzUKfa1Z3fyaYFgzxHEucc_XLNDuWF1kiQ/edit?pli=1&tab=t.0](URL).
+Table 19 I did the Gameplay and UI.
+
+In the step two, the code is wrong becasue we need the muskrat changes from gobel to local on the bubbles. Also there are no different between gobel and local for flat ground, which we can just need to make the muskrat into local all the time.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
